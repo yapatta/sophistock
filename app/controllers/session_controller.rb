@@ -3,21 +3,24 @@ class SessionController < BaseController
     end
 
     def login
-        user = User.find_by(params[:email]
-        if user && user.authenticate(params[:password_digest])
+        user = User.find_by(email: params[:email])
+        if user && user.authenticate(params[:password])
             session[:id] = user.id
+            return redirect_to '/profiles/me'
         end
-        redirect_to "/profiles/#{user.id}"
+        render :top
     end
 
     def signUp
     end
 
     def register
-        User.create(name: params[:name],
-                    email: params[:email],
-                    password_digest: params[:password_digest])
-        redirect_to '/'
+        user = User.new(params.permit(:name,:email,:password,:password_confirmation))
+        if user.save
+            session[:id] = user.id
+            return redirect_to '/profiles/me'
+        end
+        return render :signUp
     end
 end
   
