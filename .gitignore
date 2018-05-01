@@ -13,7 +13,6 @@
 !/log/.keep
 !/tmp/.keep
 
-/Gemfile.lock
 /db/mysql/*
 
 /node_modules
