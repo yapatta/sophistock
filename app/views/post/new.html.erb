@@ -1,0 +1,9 @@
+<%= form_with(model: Post.new, url: '/post', multipart: true) do |f| %>
+    <%= f.label :title, 'title'%>
+    <%= f.text_field :title %>
+    <%= f.label :content, '内容' %>
+    <%= f.text_area :content %>
+    <%= f.label :picture, 'ユーザー画像' %>
+    <%= f.file_field :picture %>
+    <%= f.submit :submit %>
+<% end %>

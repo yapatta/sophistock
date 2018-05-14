@@ -4,5 +4,10 @@ Rails.application.routes.draw do
   post '/login', to: 'session#login'
   get '/signup', to: 'session#signup'
   post '/register', to: 'session#register'
+
   get '/profiles/me', to: 'profile#me'
+
+  get '/post/new', to: 'post#new'
+  get '/post/:id', to: 'post#show'
+  post '/post', to: 'post#create'
 end
