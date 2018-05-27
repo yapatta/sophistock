@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 
   get '/profiles/me', to: 'profile#me'
   get '/posts/ajax', to: 'post#ajax_load'
-  get '/post/new', to: 'post#new'
-  get '/post/:id', to: 'post#show'
-  post '/post', to: 'post#create'
+  get '/posts/new', to: 'post#new'
+  get '/posts/:id', to: 'post#show'
+  post '/posts', to: 'post#create'
 end
