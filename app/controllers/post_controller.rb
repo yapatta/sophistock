@@ -14,6 +14,11 @@ class PostController < BaseController
         @post = Post.find(params[:id])
     end
 
+    def ajax_load
+        post = Post.find(1)
+        render json: post
+    end
+
     private
     def post_params
         params.require(:post).permit(:title, :content, :picture)

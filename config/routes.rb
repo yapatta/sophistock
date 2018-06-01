@@ -6,8 +6,9 @@ Rails.application.routes.draw do
   post '/register', to: 'session#register'
 
   get '/profiles/me', to: 'profile#me'
-
-  get '/post/new', to: 'post#new'
-  get '/post/:id', to: 'post#show'
-  post '/post', to: 'post#create'
+  get '/posts/ajax', to: 'post#ajax_load'
+  get '/posts', to: 'post#index'
+  get '/posts/new', to: 'post#new'
+  get '/posts/:id', to: 'post#show'
+  post '/posts', to: 'post#create'
 end
