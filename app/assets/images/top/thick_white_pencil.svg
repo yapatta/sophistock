@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 188.56 188.778">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #fff;
+        stroke-width: 5px;
+      }
+
+      .cls-2 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="グループ化_283" data-name="グループ化 283" transform="translate(1149.275 -346.122) rotate(-45)">
+    <line id="線_8" data-name="線 8" class="cls-1" y2="77.5" transform="translate(-1087.905 -534.915)"/>
+    <line id="線_9" data-name="線 9" class="cls-1" y2="77.5" transform="translate(-1026.905 -534.915)"/>
+    <line id="線_10" data-name="線 10" class="cls-1" x2="61" transform="translate(-1087.905 -469.915)"/>
+    <line id="線_11" data-name="線 11" class="cls-1" x2="63" transform="translate(-1087.491 -460.329)"/>
+    <line id="線_12" data-name="線 12" class="cls-1" x1="10.4" y2="20.415" transform="translate(-1040.5 -458.915)"/>
+    <line id="線_13" data-name="線 13" class="cls-1" x2="10.405" y2="20.415" transform="translate(-1084.905 -458.915)"/>
+    <line id="線_16" data-name="線 16" class="cls-1" x2="10.37" y2="24.59" transform="translate(-1040.4 -440.5)"/>
+    <line id="線_17" data-name="線 17" class="cls-1" x1="10.6" y2="24.585" transform="translate(-1085.1 -440.5)"/>
+    <path id="パス_737" data-name="パス 737" class="cls-1" d="M480.5-391.5c0,45.946,27.5,84.5,27.5,84.5" transform="translate(-1565.405 -25.396)"/>
+    <path id="パス_738" data-name="パス 738" class="cls-1" d="M534.656-391.5c0,48.1-26.23,84.5-26.23,84.5" transform="translate(-1564.879 -25.396)"/>
+    <g id="楕円形_7" data-name="楕円形 7" class="cls-1" transform="translate(-1067.405 -416.415)">
+      <circle class="cls-2" cx="10" cy="10" r="10"/>
+      <circle class="cls-3" cx="10" cy="10" r="7.5"/>
+    </g>
+    <line id="線_18" data-name="線 18" class="cls-1" y2="66.585" transform="translate(-1056.905 -397.5)"/>
+  </g>
+</svg>

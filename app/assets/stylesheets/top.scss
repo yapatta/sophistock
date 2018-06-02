@@ -1,0 +1,49 @@
+body {
+	padding: 0;
+	color:#A183C3;
+}
+div.screen.top {
+	padding: 5px;
+	text-align: center;
+	background-color: #EEEEEE;
+
+	p {
+    	margin-top: 8px;
+	}
+
+	input {
+		width: 70%;
+	}
+	.autolog {
+		margin-top: 5px;
+		.auto_login {
+			width: 16px;
+			height: 16px;
+		}
+	}
+	img {
+		height: 95px;
+		height: 95px;
+	}
+	.top_picture {
+		margin-top: 100px;
+		margin-bottom: 100px;
+	}
+
+	.forget {
+		margin-top: 10px;
+	}
+	.autolog {
+		margin-bottom: 10px;
+	}
+	footer {
+    	position: fixed;
+    	bottom: 0;
+    	width: 100%;
+    	height: 50px;
+	}
+}
+.email .password {
+		text-align: left;
+	}
+
