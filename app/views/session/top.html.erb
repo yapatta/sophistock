@@ -1,28 +1,37 @@
 <div class="screen top">
-	<div class="top_picture">
-		<%= link_to image_tag("top/title_thick_version.svg", alt: "title") %>
-	</div>
-
-	<div class="form_all">
-		<%= form_with(url: '/login', method: 'post') do |f| %>
-    		<%= f.label "メールアドレス", class: "email" %>
-    		<br>
-    		<%= f.email_field :email %>
-    		<br>
-    		<%= f.label "パスワード", class: "password" %>
-    		<br>
-    		<%= f.password_field :password %>
-    		<br>
-    		<!--仮実装-->
-    		<div class="autolog">
-				<input type="checkbox" name="forever_login" class="auto_login">次回から自動ログイン
-			</div>
-    		<%= f.submit "ログイン",class: "btn btn-primary" %>
-		<% end %>
-		<div class="forget">
-			パスワードを忘れた場合
+	<header>
+		<div class="air1"></div>
+		<div class="top_picture">
+			<%= link_to image_tag("top/title_thick_version.svg", alt: "title") %>
 		</div>
+		<div class="air2"></div>
+	</header>
+
+	<div class="login_body">	
+		<div class="air3"></div>
+		<div class="form_all">
+			<%= form_with(url: '/login', method: 'post') do |f| %>
+    			<%= f.label "メールアドレス", class: "email" %>
+    			<br>
+    			<%= f.email_field :email %>
+    			<br>
+    			<%= f.label "パスワード", class: "password" %>
+    			<br>
+    			<%= f.password_field :password %>
+    			<br>
+    			<!--仮実装-->
+    			<div class="autolog">
+					<input type="checkbox" name="forever_login" class="auto_login">次回から自動ログイン
+				</div>
+    			<%= f.submit "ログイン",class: "btn btn-primary" %>
+			<% end %>
+			<div class="forget">
+				パスワードを忘れた場合
+			</div>
+		</div>
+		<div class="air4"></div>
 		<footer>
 			<a href='/signup'>Sophistockに登録</a>
 		</footer>
+	</div>
 </div>
