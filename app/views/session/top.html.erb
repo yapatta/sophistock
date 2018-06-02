@@ -11,14 +11,10 @@
 		<div class="air3"></div>
 		<div class="form_all">
 			<%= form_with(url: '/login', method: 'post') do |f| %>
-    			<%= f.label "メールアドレス", class: "email" %>
-    			<br>
+    			<%= f.label "メールアドレス" %>
     			<%= f.email_field :email %>
-    			<br>
-    			<%= f.label "パスワード", class: "password" %>
-    			<br>
+    			<%= f.label "パスワード" %>
     			<%= f.password_field :password %>
-    			<br>
     			<!--仮実装-->
     			<div class="autolog">
 					<input type="checkbox" name="forever_login" class="auto_login">次回から自動ログイン
