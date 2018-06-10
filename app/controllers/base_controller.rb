@@ -5,4 +5,3 @@ class BaseController < ApplicationController
     def auth
     end
 end
-  

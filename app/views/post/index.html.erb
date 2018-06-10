@@ -1,14 +1,13 @@
-<head>
-    <title>DivProvisional</title>
-    <%= csrf_meta_tags %>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-</head>
-<body>
-    <div>
-        <span class="border border-primary">sophistock</span>
-    </div>
+<div>
+    <span class="border border-primary">sophistock</span>
+</div>
+<div class='post-container'>
     <script>
-        ajax();
+        var page = 1; 
+        appendPosts(page);
     </script>
-</body>
+    <ul class='posts'>
+    </ul>
+</div>
+<span class='btn btn-primary' onClick="{ page += 1;
+                                         appendPosts(page);}">もっと読む</span>
