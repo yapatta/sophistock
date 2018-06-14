@@ -17,7 +17,7 @@ class PostController < BaseController
 
     def ajax_load
         posts = Post.all.order(created_at: :desc).page(params[:page])
-        render json: posts
+        render json: posts.to_json({:include => {:user => {:only => [:name]}}})
     end
 
     private
