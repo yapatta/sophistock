@@ -1,67 +1,67 @@
+/*
 @media screen and (orientation: portrait) {
-	/* 縦向きの場合のスタイル */
-	img {width: 20%;}
+	/* 縦向きの場合のスタイル
+	img {width: 25%;}
 }
 @media screen and (orientation: landscape) {
-   /* 横向きの場合のスタイル */
+   /* 横向きの場合のスタイル
    img {width: 10%;}
 }
+*/
 
 div.screen.top {
+	display: flex;
+	flex-direction: column;
 	padding: 5px;
 	background-color: #EEEEEE;
 
-	.top_picture {
-			text-align: center;
-			height: 0;
-	}
-
-	p {
-    	margin-top: 8px;
-	}
-
-	input {
-		width: 100%;
-	}
-	.autolog {
-		margin-top: 5px;
-		.auto_login {
-			width: 16px;
-			height: 16px;
-		}
-	}
-	.forget {
-		margin-top: 10px;
-	}
-	.autolog {
-		margin-bottom: 10px;
-	}
-	footer {
-    	position: fixed;
-    	bottom: 0;
-    	width: 100%;
-    	height: 40px;
-    	text-align: center;
-	}
-}
-/*	flexboxについて	*/
-div.screen.top {
+	.top-picture {
 		display: flex;
 		flex-direction: column;
+		flex: 1;
+		text-align: center;
+		height: 100px;
+		object-fit: cover;
+	}
+
+	.login_body {
+		display: flex;
+
+		.form_all{
+			width: 80%;
+			max-width: 400px;
+			margin: 0 auto;
+
+			input {
+				width: 100%;
+			}
+
+			.autolog {
+				margin-bottom: 10px;
+				text-align: center;
+				margin-top: 5px;
+
+				#auto_login {
+					width: 16px;
+					height: 16px;
+				}
+				label, input[type="checkbox"] {
+					cursor: pointer;
+				}
+			}
+
+			.forget {
+				margin-top: 10px;
+			}
+		}
+
+		.register {
+    		position: fixed;
+    		bottom: 0;
+    		width: 100%;
+    		height: 40px;
+    		text-align: center;
+		}
+		
+	}
 }
-.air1 {flex: 1;}
-.air2 {flex: 1;}
-.top_picture {flex: 1;}
-header {
-	display: flex;
-	flex-direction: column;
-	flex: 1;
-}
-.login_body {
-	flex: 1;
-	display: flex;
-}
-.air3 {flex: 1;}
-.air4 {flex: 1;}
-.form_all {flex : 4;}
-/*	flexboxおわり	*/

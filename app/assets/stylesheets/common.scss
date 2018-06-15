@@ -20,6 +20,9 @@ h1 {
     background: #79589F; 
     color: #ffffff;
     border-color: #79589F;
+    &:hover{
+
+    }
 }
 
 .btn-primary:hover, .btn-primary:focus, 
@@ -39,5 +42,10 @@ h1 {
 
 
 /* aタグの再編集 */
-a {color: #A183C3;}
+a {
+	color: #A183C3;
+	&:hover {
+
+	}
+}
 a:hover {color: #693B9D;}

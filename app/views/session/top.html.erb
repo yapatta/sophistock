@@ -1,14 +1,10 @@
 <div class="screen top">
-	<header>
-		<div class="air1"></div>
-		<div class="top_picture">
-			<%= link_to image_tag("top/title_thick_version.svg", alt: "title") %>
-		</div>
-		<div class="air2"></div>
-	</header>
 
-	<div class="login_body">	
-		<div class="air3"></div>
+	<div class="top-picture">
+		<%= image_tag("top/top.png", alt: "title") %>
+	</div>
+
+	<div class="login-body">	
 		<div class="form_all">
 			<%= form_with(url: '/login', method: 'post') do |f| %>
     			<%= f.label "メールアドレス" %>
@@ -17,7 +13,7 @@
     			<%= f.password_field :password %>
     			<!--仮実装-->
     			<div class="autolog">
-					<input type="checkbox" name="forever_login" class="auto_login">次回から自動ログイン
+					<input type="checkbox" name="forever_login" id="auto_login"><label for="auto_login">次回から自動ログイン</label>
 				</div>
     			<%= f.submit "ログイン",class: "btn btn-primary" %>
 			<% end %>
@@ -25,9 +21,8 @@
 				パスワードを忘れた場合
 			</div>
 		</div>
-		<div class="air4"></div>
-		<footer>
+		<div class="register">
 			<a href='/signup'>Sophistockに登録</a>
-		</footer>
+		</div>
 	</div>
 </div>
