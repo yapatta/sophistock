@@ -7,6 +7,7 @@ class PostController < BaseController
         if post.save
             return redirect_to "/post/#{post.id}"
         end
+        
         render :new
     end
 
@@ -15,8 +16,8 @@ class PostController < BaseController
     end
 
     def ajax_load
-        post = Post.find(1)
-        render json: post
+        posts = Post.all.order(created_at: :desc).page(params[:page])
+        render json: posts.to_json({:include => {:user => {:only => [:name]}}})
     end
 
     private
