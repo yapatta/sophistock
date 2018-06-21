@@ -1,13 +1,30 @@
-html {
-	height: 100%;
+.screen {
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+	-webkit-overflow-scrolling: touch;
 }
-body {
-	margin: 0;
-	height: 100%;
-	.screen {
-		min-height: 100%;
-	}
+input[type="text"], [type="email"], [type="password"] {
+    border-radius: 5px;
+    padding: 3px 8px;
+	border: 1px solid black;
 }
-h1 {
-	margin: 0;
+input[type="checkbox"] {
+	background-color: white;
+	border-radius: 2px;
+}
+
+$maincolor: #693B9D;
+$lightcolor: #A183C3;
+$minorcolor: #79589F;
+
+.btn-minorcolor {
+    background: $minorcolor; 
+    color: #ffffff;
+    border: none;
+}
+.btn-maincolor {
+    background: $maincolor;
+    color: #ffffff;
+    border: none;
 }

@@ -12,7 +12,10 @@
  *
  *
  */
+
+ @import './common';
 @import './bootstrap/bootstrap.min';
 @import './bootstrap/bootstrap-grid.min';
 @import './bootstrap/bootstrap-reboot.min';
-@import 'common';
+
+@import './session/top';
