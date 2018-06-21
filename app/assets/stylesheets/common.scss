@@ -5,7 +5,8 @@
 	-webkit-overflow-scrolling: touch;
 }
 input[type="text"], [type="email"], [type="password"] {
-	border-radius: 5px;
+    border-radius: 5px;
+    padding: 3px 8px;
 	border: 1px solid black;
 }
 input[type="checkbox"] {
@@ -13,17 +14,17 @@ input[type="checkbox"] {
 	border-radius: 2px;
 }
 
-$main-color: #693B9D;
-$light-color: #A183C3;
-$minor-color: #79589F;
+$maincolor: #693B9D;
+$lightcolor: #A183C3;
+$minorcolor: #79589F;
 
-.btn-primary {
-    background: $minor-color; 
+.btn-minorcolor {
+    background: $minorcolor; 
     color: #ffffff;
     border: none;
 }
 .btn-maincolor {
-    background: $main-color;
+    background: $maincolor;
     color: #ffffff;
     border: none;
 }
