@@ -1,51 +1,29 @@
-html {
-	height: 100%;
+.screen {
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+	-webkit-overflow-scrolling: touch;
 }
-body {
-	padding: 0;
-	color:#A183C3;
-	margin: 0;
-	height: 100%;
-	.screen {
-		min-height: 100%;
-	}
+input[type="text"], [type="email"], [type="password"] {
+	border-radius: 5px;
+	border: 1px solid black;
 }
-h1 {
-	margin: 0;
+input[type="checkbox"] {
+	background-color: white;
+	border-radius: 2px;
 }
 
-/* bootstrap btn-primaryの再編集 */
+$main-color: #693B9D;
+$light-color: #A183C3;
+$minor-color: #79589F;
 
 .btn-primary {
-    background: #79589F; 
+    background: $minor-color; 
     color: #ffffff;
-    border-color: #79589F;
-    &:hover{
-
-    }
+    border: none;
 }
-
-.btn-primary:hover, .btn-primary:focus, 
-.btn-primary:active, .btn-primary:active:focus, .btn-primary:active:hover, .btn-primary:active.focus,
-.btn-primary.active, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary.active.focus,
-.open > .dropdown-toggle.btn-primary, 
-.open > .dropdown-toggle.btn-primary:hover,
-.open > .dropdown-toggle.btn-primary:focus, 
-.open > .dropdown-toggle.btn-primary.focus,
-.btn-primary.disabled:hover, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary:hover,
-.btn-primary.disabled:focus, .btn-primary[disabled]:focus, fieldset[disabled] .btn-primary:focus,
-.btn-primary.disabled.focus, .btn-primary[disabled].focus, fieldset[disabled] .btn-primary.focus {
-    background: #693B9D; //ボタンの上にポインタを持ってきたり、クリックしたりした時の背景色
-    color: #ffffff; //ボタンの上にポインタを持ってきたり、クリックしたりした時のテキストの色
-    border-color: #693B9D; //ポインタを持ってきたときのボーダーの色
+.btn-maincolor {
+    background: $main-color;
+    color: #ffffff;
+    border: none;
 }
-
-
-/* aタグの再編集 */
-a {
-	color: #A183C3;
-	&:hover {
-
-	}
-}
-a:hover {color: #693B9D;}

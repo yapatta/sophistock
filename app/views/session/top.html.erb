@@ -1,28 +1,23 @@
 <div class="screen top">
-
-	<div class="top-picture">
-		<%= image_tag("top/top.png", alt: "title") %>
+	<div class="picture">
+		<%= image_tag("session/top.png", alt: "title") %>
 	</div>
-
-	<div class="login-body">	
-		<div class="form_all">
+	<div class="body">	
+		<div class="form">
 			<%= form_with(url: '/login', method: 'post') do |f| %>
     			<%= f.label "メールアドレス" %>
     			<%= f.email_field :email %>
     			<%= f.label "パスワード" %>
     			<%= f.password_field :password %>
     			<!--仮実装-->
-    			<div class="autolog">
-					<input type="checkbox" name="forever_login" id="auto_login"><label for="auto_login">次回から自動ログイン</label>
+				<div class='mt-2'>
+					<input class='mr-1' type="checkbox" name="auto"/>
+					<label for="auto">次回から自動ログイン</label>
 				</div>
     			<%= f.submit "ログイン",class: "btn btn-primary" %>
 			<% end %>
-			<div class="forget">
-				パスワードを忘れた場合
-			</div>
 		</div>
-		<div class="register">
-			<a href='/signup'>Sophistockに登録</a>
-		</div>
+		<a class='mt-2' href='#'>パスワードを忘れた場合</a>
 	</div>
+	<div><a href='/signup'>Sophistockに登録</a></div>
 </div>
