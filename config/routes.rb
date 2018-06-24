@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get '/signup', to: 'session#signup'
   post '/register', to: 'session#register'
 
-  get '/profiles/me', to: 'profile#me'
+  get '/users/me', to: 'user#me'
   get '/posts/ajax', to: 'post#ajax_load'
   get '/posts', to: 'post#index'
   get '/posts/new', to: 'post#new'
