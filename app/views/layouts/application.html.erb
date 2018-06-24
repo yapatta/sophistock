@@ -12,6 +12,15 @@
   </head>
 
   <body>
+    <%= 
+        render 'header'
+    %>
+    aiueo
     <%= yield %>
+    <%= 
+      if yield(:showfooter) 
+        render :footer
+      end
+    %>
   </body>
 </html>

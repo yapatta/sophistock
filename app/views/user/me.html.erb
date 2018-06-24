@@ -1,3 +1,7 @@
-<div class="screen profile-me">
-	
+<% 
+    provide(:showfooter, true)
+    provide(:showheader, true)
+%>
+<div class='screen profile-me' style='padding-top: 60px; padding-bottom: 50px;'>
+    <%= @user.name %>
 </div>
