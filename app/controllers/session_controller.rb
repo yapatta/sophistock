@@ -1,4 +1,4 @@
-class SessionController < BaseController
+class SessionController < ApplicationController
     def top
     end
 
