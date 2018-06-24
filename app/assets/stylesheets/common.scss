@@ -1,4 +1,10 @@
+$maincolor: #693B9D;
+$lightcolor: #A183C3;
+$minorcolor: #79589F;
+$backgroundcolor: #EDEDED;
+
 .screen {
+    background-color: $backgroundcolor;
     padding: 10px;
     min-width: 300px;
     min-height: 550px;
@@ -17,10 +23,6 @@ input[type="checkbox"] {
 	border-radius: 2px;
 }
 
-$maincolor: #693B9D;
-$lightcolor: #A183C3;
-$minorcolor: #79589F;
-
 .btn-minorcolor {
     background: $minorcolor; 
     color: #ffffff;
@@ -31,3 +33,4 @@ $minorcolor: #79589F;
     color: #ffffff;
     border: none;
 }
+

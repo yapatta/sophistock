@@ -5,12 +5,12 @@
 	<div class="body">	
 		<div class="form">
 			<%= form_with(url: '/login', method: 'post') do |f| %>
-    			<%= f.label "メールアドレス" %>
-    			<%= f.email_field :email %>
-    			<%= f.label "パスワード" %>
-    			<%= f.password_field :password %>
+				<div class="mail-pass">
+    				<%= f.email_field :email, placeholder: "メールアドレス" %>
+    				<%= f.password_field :password, placeholder: "パスワード" %>
+    			</div>
     			<!--仮実装-->
-				<div class='mt-2'>
+				<div class='auto-container mt-2'>
 					<input class='mr-1' type="checkbox" name="auto"/>
 					<label for="auto">次回から自動ログイン</label>
 				</div>
@@ -19,5 +19,7 @@
 		</div>
 		<a class='mt-2' href='#'>パスワードを忘れた場合</a>
 	</div>
-	<div><a href='/signup'>Sophistockに登録</a></div>
+	<div class="signup-link">
+		<a href='/signup'>Sophistockに登録</a>
+	</div>
 </div>
