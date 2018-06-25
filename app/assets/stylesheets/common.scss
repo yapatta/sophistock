@@ -3,9 +3,12 @@ $lightcolor: rgb(241, 239, 243);
 $minorcolor: #79589F;
 $backgroundcolor: #EDEDED; 
 
+body {
+    margin: 0;
+}
+
 .screen {
     background-color: $backgroundcolor;
-    padding: 10px;
     min-width: 300px;
     min-height: 550px;
     width: 100vw;
