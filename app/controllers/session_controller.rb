@@ -1,4 +1,4 @@
-class SessionController < BaseController
+class SessionController < ApplicationController
     def top
     end
 
@@ -6,7 +6,7 @@ class SessionController < BaseController
         user = User.find_by(email: params[:email])
         if user && user.authenticate(params[:password])
             session[:id] = user.id
-            return redirect_to '/profiles/me'
+            return redirect_to '/users/me'
         end
         render :top
     end
@@ -18,7 +18,7 @@ class SessionController < BaseController
         user = User.new(user_params)
         if user.save
             session[:id] = user.id
-            return redirect_to '/profiles/me'
+            return redirect_to '/users/me'
         end
         return render :signUp
     end

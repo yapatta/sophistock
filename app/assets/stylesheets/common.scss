@@ -1,17 +1,20 @@
 $maincolor: #693B9D;
 $lightcolor: #A183C3;
 $minorcolor: #79589F;
-$backgroundcolor: #EDEDED;
+$backgroundcolor: #EDEDED; 
+
+body {
+    margin: 0;
+}
 
 .screen {
     background-color: $backgroundcolor;
-    padding: 10px;
     min-width: 300px;
     min-height: 550px;
     width: 100vw;
     height: 100vh;
     overflow: auto;
-	-webkit-overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch;
 }
 input[type="text"], [type="email"], [type="password"] {
     border-radius: 5px;
