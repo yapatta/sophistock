@@ -1,7 +1,7 @@
-$maincolor: #693B9D;
+$maincolor: #79589F;
 $lightcolor: #A183C3;
-$minorcolor: #79589F;
-$backgroundcolor: #EDEDED; 
+$backgroundcolor: #EDEDED;
+
 
 body {
     margin: 0;
@@ -25,12 +25,18 @@ input[type="checkbox"] {
 	background-color: white;
 	border-radius: 2px;
 }
-
-.btn-minorcolor {
-    background: $minorcolor; 
-    color: #ffffff;
-    border: none;
+.btn {
+    width: 100%;
+    border-radius: 20px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 6px;
+    padding-left: 6px;
+    border-width: 1px;
+    height: 38px;
+    font-size: 16px;
 }
+
 .btn-maincolor {
     background: $maincolor;
     color: #ffffff;
