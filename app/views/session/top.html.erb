@@ -13,8 +13,11 @@
     			</div>
     			<!--仮実装-->
 				<div class='auto-container mt-2'>
-					<input class='mr-1' type="checkbox" name="auto"/>
-					<label for="auto">次回から自動ログイン</label>
+					<label for="auto-login">
+						<input class='mr-1' type="checkbox" id="auto-login">
+						次回から自動ログイン
+					</label>
+					
 				</div>
     			<%= f.submit "ログイン", class: "btn btn-maincolor" %>
 			<% end %>
