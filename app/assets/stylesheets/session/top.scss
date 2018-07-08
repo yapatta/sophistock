@@ -24,6 +24,7 @@ div.screen.top {
 		}
 	}
 	.body {
+		box-sizing: border-box;
 		background-color: white;
 		padding: 10px;
 		display: flex;
@@ -63,7 +64,7 @@ div.screen.top {
 				height: 15px;
 			}
 			.btn {
-    			width: 100%;
+				width: 100%;
     			border-radius: 20px;
     			padding-top: 6px;
     			padding-bottom: 6px;

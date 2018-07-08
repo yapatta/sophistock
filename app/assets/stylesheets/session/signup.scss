@@ -15,6 +15,7 @@ div.screen.signup {
 		justify-content: center;
 	}
 	.body {
+        box-sizing: border-box;
         background-color: white;
         padding: 10px;
         display: flex;
@@ -44,19 +45,20 @@ div.screen.signup {
                 input[type="text"], input[type="email"], [type="password"] {
                     margin-bottom: 5px;
                 }
-                .btn {
-                    width: 100%;
-                    border-radius: 20px;
-                    padding-top: 6px;
-                    padding-bottom: 6px;
-                    padding-right: 6px;
-                    padding-left: 6px;
-                    border-width: 1px;
-                    height: 38px;
-                    font-size: 16px;
-                }
+            }
+            .btn {
+                width: 100%;
+                border-radius: 20px;
+                padding-top: 6px;
+                padding-bottom: 6px;
+                padding-right: 6px;
+                padding-left: 6px;
+                border-width: 1px;
+                height: 38px;
+                font-size: 16px;
             }
         }
+
     }
     .login {
         text-align: center;
