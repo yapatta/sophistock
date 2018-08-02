@@ -5,4 +5,19 @@ div.component.footer {
     left: 0;
     width: 100%;
     height: 50px;
+    display: flex;
+    a {
+    	color: $footercolor;
+    	text-decoration: none;
+    	font-size: 0.6em;
+    	width: 25%;
+    div {
+    	text-align: center;
+    		img{
+    			margin-top: 5px;
+    			display: inline-block;
+    			height: 25px;
+    		}
+    	}
+    }
 }

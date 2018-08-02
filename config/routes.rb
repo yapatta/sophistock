@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   post '/register', to: 'session#register'
 
   get '/users/me', to: 'user#me'
+  get '/users/edit', to: 'user#edit_screen'
+  post '/users/edit', to: 'user#edit'
   get '/posts/ajax', to: 'post#ajax_load'
   get '/posts', to: 'post#index'
   get '/posts/new', to: 'post#new'

@@ -7,8 +7,9 @@ class SessionController < ApplicationController
         if user && user.authenticate(params[:password])
             session[:id] = user.id
             return redirect_to '/users/me'
+        else
+            render :top
         end
-        render :top
     end
 
     def signUp

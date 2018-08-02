@@ -1,4 +1,4 @@
-div.screen.users-me {
+div.screen.edit_screen {
     .content {
         font-size: 1.2em;
         display: flex;
@@ -34,30 +34,28 @@ div.screen.users-me {
             }
         }
     }
-    .introduction {
-        h3 {
-            span a .btn {
-                float: right;
-                border-radius: 5px;
-                padding-top: 6px;
-                padding-bottom: 6px;
-                padding-right: 6px;
-                padding-left: 6px;
-                border-width: 1px;
-                height: 38px;
-                font-size: 16px;
-                cursor: pointer;
-                color: white;
-                background-color: $minorcolor;
-            }
-        }
-        p {
-            margin: 0 auto;
-            display: block;
-            background-color: white;
+    .form {
+        textarea {
+            box-sizing: border-box;
+            width: 100%;
             min-height: 150px;
             border-radius: 5px;
             padding: 13px;
+            font-size: 1em;
+            border-style: none;
+        }
+        .btn {
+            border-radius: 5px;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            padding-right: 6px;
+            padding-left: 6px;
+            border-width: 1px;
+            height: 38px;
+            font-size: 16px;
+            cursor: pointer;
+            color: white;
+            background-color: $maincolor;
         }
     }
 }
