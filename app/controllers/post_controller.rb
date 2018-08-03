@@ -3,12 +3,13 @@ class PostController < BaseController
     end
 
     def create
-        post = Post.new(post_params)
-        if post.save
-            return redirect_to "/post/#{post.id}"
+        user = @current_user
+        @post = user.posts.new(post_params)
+        if @post.save
+            redirect_to "/posts/#{@post.id}"
+        else
+            render :new
         end
-        
-        render :new
     end
 
     def show
@@ -21,7 +22,7 @@ class PostController < BaseController
     end
 
     private
-    def post_params
-        params.require(:post).permit(:title, :content, :picture)
-    end
+        def post_params
+            params.require(:post).permit(:title, :content, :picture)
+        end
 end

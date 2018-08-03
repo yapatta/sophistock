@@ -5,6 +5,8 @@ class Post < ApplicationRecord
     has_many :likes
     belongs_to :user
     mount_uploader :picture, PictureUploader
+    validates :title, presence: true
+    validates :content, presence: true
     def like_count
         likes.count
     end
