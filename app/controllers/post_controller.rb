@@ -21,6 +21,11 @@ class PostController < BaseController
         render json: posts.to_json({:include => {:user => {:only => [:name]}}})
     end
 
+    def destroy
+        @post.destroy
+        redirect_to "/users/me"
+    end
+
     private
         def post_params
             params.require(:post).permit(:title, :content, :picture)
