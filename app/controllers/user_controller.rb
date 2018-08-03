@@ -1,7 +1,7 @@
 class UserController < BaseController
     def me
     end
-    def edit_screen
+    def me_edit
     end
     def edit
     	user = @current_user
