@@ -22,8 +22,10 @@ class PostController < BaseController
     end
 
     def destroy
-        @post.destroy
-        redirect_to "/users/me"
+        @post = Post.find(params[:id])
+        if @post.destroy
+            redirect_to "/users/me"
+        end
     end
 
     private

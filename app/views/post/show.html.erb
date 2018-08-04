@@ -1,12 +1,12 @@
 <div class='screen show_post' style='padding-top: 60px; padding-bottom: 50px;'>
 	<%= render '/layouts/header' %>
 	<div class="content">
-		<h2><%= @post.title %></h2>
+		<h1><%= @post.title %></h1>
 		<p><%= @post.content %></p>
 		<p><%= @post.created_at %></p>
 		<image src='<%= @post.picture %>'/>
 		<%= @post.picture %>
-		<%= link_to "削除", '/posts', method: :delete, data: { confirm: "本当にいいですか?" } %>
+		<%= link_to "削除", @post_id, method: :delete, data: { confirm: "本当に削除していいですか?" } %>
 	</div>
 	<%= render '/layouts/footer' %>
 </div>
