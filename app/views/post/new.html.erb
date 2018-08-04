@@ -1,7 +1,7 @@
 <div class='screen posts-new' style='padding-top: 60px; padding-bottom: 50px;'>
 	<%= render '/layouts/header' %>
 	<div class='info'>
-		<%= form_with(model: Post.new, url: '/posts',method: 'post', multipart: true) do |f| %>
+		<%= form_with(model: Post.new, url: '/posts', multipart: true) do |f| %>
 			<div class="title">
     			<%= f.label :title, '記事を書く'%>
     			<%= f.text_field :title, placeholder: "タイトル" %>

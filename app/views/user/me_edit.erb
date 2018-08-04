@@ -2,7 +2,7 @@
     <%= render '/layouts/header' %>
     <div class='content'>
         <span><%= @current_user.name %></span>
-        <span class='mb-3'><%= @current_user.posts.count %> posts</span>
+        <span class='mb-3'><%= pluralize(@current_user.posts.count, "post") %></span>
         <div class='nav-bar'>
             <a href="#">
                 <div class="nav-item posts">投稿</div>
@@ -19,7 +19,7 @@
         </div>
         <div class="form">
             <h3 class="mt-3 mb-3">プロフィール編集</h3>
-            <%= form_with(url: '/users/edit', method: 'post') do |f| %>
+            <%= form_with(url: '/users/edit', method: 'patch') do |f| %>
                 <%= f.text_area :introduction  %>
                 <%= f.submit "編集完了", class: "btn mt-1" %>
             <% end %>
