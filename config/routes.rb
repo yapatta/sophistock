@@ -12,6 +12,8 @@ Rails.application.routes.draw do
   get '/posts', to: 'post#index'
   get '/posts/new', to: 'post#new'
   get '/posts/:id', to: 'post#show'
+  get '/posts/:id/edit', to: 'post#edit'
+  patch '/posts/:id/edit', to: 'post#edit_finish'
   delete '/posts/:id', to: 'post#destroy'
   post '/posts', to: 'post#create'
 end

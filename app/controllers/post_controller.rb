@@ -14,11 +14,22 @@ class PostController < BaseController
 
     def show
         @post = Post.find(params[:id])
+        @user = User.find(id = @post.user_id)
     end
 
     def ajax_load
         posts = Post.all.order(created_at: :desc).page(params[:page])
         render json: posts.to_json({:include => {:user => {:only => [:name]}}})
+    end
+
+    def edit
+        @post = Post.find(params[:id])
+    end
+
+    def edit_finish
+        @post = Post.find(params[:id])
+        @post.update(title: params[:title] ,content: params[:content])
+        redirect_to "/posts/#{@post.id}"
     end
 
     def destroy
