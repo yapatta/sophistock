@@ -1,28 +1,20 @@
 div.screen.show_post {
-	.info {
+        .info {
 		font-size: 1.2em;
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-        .title {
-        	padding: 10px;
-        	box-sizing: border-box;
-        	h2 {
-
-        	}
-        	p {
-
-        	}
-        }
-        .content {
-        	padding: 10px;
-        	box-sizing: border-box;
-        }
-        .edit {
-        	padding: 10px;
-        	box-sizing: border-box;
-        	
-        }
-
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+                .title {
+        	       padding: 10px;
+        	       box-sizing: border-box;
+                }
+                .content {
+        	       padding: 10px;
+        	       box-sizing: border-box;
+                }
+                .edit {
+        	       padding: 10px;
+        	       box-sizing: border-box;	
+                }
 	}
 }
