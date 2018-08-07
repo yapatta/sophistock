@@ -24,19 +24,19 @@ class PostController < BaseController
 
     def edit
         @post = Post.find(params[:id])
-        return render_forbidden if @post.user.id == @current_user.id
+        return render_forbidden unless @post.user.id == @current_user.id
     end
 
     def edit_finish
         @post = Post.find(params[:id])
-        return render_forbidden if @post.user.id == @current_user.id
+        return render_forbidden unless @post.user.id == @current_user.id
         @post.update(title: params[:title] ,content: params[:content])
         redirect_to "/posts/#{@post.id}"
     end
 
     def destroy
         @post = Post.find(params[:id])
-        return render_forbidden if @post.user.id == @current_user.id
+        return render_forbidden unless @post.user.id == @current_user.id
         if @post.destroy
             redirect_to "/users/me"
         end
