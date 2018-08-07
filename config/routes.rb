@@ -8,12 +8,14 @@ Rails.application.routes.draw do
   get '/users/me', to: 'user#me'
   get '/users/edit', to: 'user#me_edit'
   patch '/users/edit', to: 'user#edit'
+  delete '/users/logout', to: 'user#log_out'
+
   get '/posts/ajax', to: 'post#ajax_load'
   get '/posts', to: 'post#index'
   get '/posts/new', to: 'post#new'
   get '/posts/:id', to: 'post#show'
   get '/posts/:id/edit', to: 'post#edit'
-  patch '/posts/:id/edit', to: 'post#edit_finish'
+  patch '/posts/:id', to: 'post#edit_finish'
   delete '/posts/:id', to: 'post#destroy'
   post '/posts', to: 'post#create'
 end

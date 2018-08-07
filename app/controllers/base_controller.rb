@@ -5,4 +5,9 @@ class BaseController < ApplicationController
     def auth
         @current_user = User.find(session[:id])
     end
+
+    protected
+    def render_forbidden
+    	render 'forbidden'
+    end
 end
