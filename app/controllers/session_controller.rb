@@ -11,6 +11,12 @@ class SessionController < ApplicationController
         render :top
     end
 
+    def log_out
+        session.delete(:id)
+        @current_user = nil
+        redirect_to '/'
+    end
+
     def signUp
     end
 

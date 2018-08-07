@@ -7,9 +7,4 @@ class UserController < BaseController
         @current_user.update(introduction: params[:introduction])
         redirect_to '/users/me'
     end
-    def log_out
-    	session.delete(:user_id)
-    	@current_user = nil
-    	redirect_to '/'
-	end
 end

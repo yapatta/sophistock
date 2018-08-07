@@ -8,6 +8,6 @@ class BaseController < ApplicationController
 
     protected
     def render_forbidden
-    	render 'forbidden'
+    	render '/layouts/forbidden'
     end
 end
