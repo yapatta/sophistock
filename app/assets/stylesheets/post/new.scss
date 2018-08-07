@@ -1,0 +1,49 @@
+div.screen.posts-new {
+	.info {
+        font-size: 1.2em;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        .title {
+        	padding: 10px;
+        	box-sizing: border-box;
+        	input[type="text"] {
+        		box-sizing: border-box;
+        		font-size: 1em;
+            	border-style: none;
+            	width: 100%;
+        	}
+        	::placeholder {
+            	color: $footercolor;
+            	font-size: 0.8em;
+            }
+        }
+        .content {
+        	padding: 10px;
+        	textarea {
+            	box-sizing: border-box;
+            	width: 100%;
+            	min-height: 250px;
+            	border-radius: 5px;
+            	padding: 8px;
+            	font-size: 1em;
+            	border-style: none;
+        	}
+        }
+        .picture {
+        	padding: 10px;
+        }
+        .post {
+        	padding: 10px;
+        	.btn {
+            	width: 100%;
+            	border-radius: 5px;
+                padding: 6px;
+            	border-width: 1px;
+            	height: 38px;
+            	font-size: 16px;
+            	cursor: pointer;
+           	}
+        }
+    }
+}
