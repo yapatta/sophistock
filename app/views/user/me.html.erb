@@ -28,6 +28,9 @@
             </h3>
             <p><%= @current_user.introduction %></p>
         </div>
+        <div class="logout">
+            <%= link_to "ログアウト", "/logout", method: :delete %>
+        </div>
     </div>
     <%= render '/layouts/footer' %>
 </div>

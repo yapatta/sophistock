@@ -1,12 +1,22 @@
 <div class='screen show_post' style='padding-top: 60px; padding-bottom: 50px;'>
 	<%= render '/layouts/header' %>
-	<div class="content">
-		<h1><%= @post.title %></h1>
-		<p><%= @post.content %></p>
-		<p><%= @post.created_at %></p>
-		<image src='<%= @post.picture %>'/>
-		<%= @post.picture %>
-		<%= link_to "削除", "/posts/#{@post.id}", method: :delete, data: {confirm: "本当に削除していいですか?"} %>
+	<div class="info">
+		<div class="title">
+			<h2 class="mb-0"><%= @post.title %></h2>
+			<p class="mb-0"><%= @post.created_at.strftime('%Y/%m/%d') %></p>
+			<p class="mt-0"><%= @user.name %>が作成</p>
+		</div>
+		<div class="content">
+			<p><%= @post.content %></p>
+			<image src='<%= @post.picture %>'/>
+			<%= @post.picture %>
+		</div>
+		<div class="edit">
+			<span>
+				<%= link_to "編集", "/posts/#{@post.id}/edit", method: :get %>
+				<%= link_to "削除", "/posts/#{@post.id}", method: :delete, data: {confirm: "本当に削除していいですか?"} %>
+			</span>
+		</div>
 	</div>
 	<%= render '/layouts/footer' %>
 </div>

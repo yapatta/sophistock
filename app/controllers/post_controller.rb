@@ -14,6 +14,7 @@ class PostController < BaseController
 
     def show
         @post = Post.find(params[:id])
+        @user = User.find(id = @post.user_id)
     end
 
     def ajax_load
@@ -21,8 +22,21 @@ class PostController < BaseController
         render json: posts.to_json({:include => {:user => {:only => [:name]}}})
     end
 
+    def edit
+        @post = Post.find(params[:id])
+        return render_forbidden if @post.user.id == @current_user.id
+    end
+
+    def edit_finish
+        @post = Post.find(params[:id])
+        return render_forbidden if @post.user.id == @current_user.id
+        @post.update(title: params[:title] ,content: params[:content])
+        redirect_to "/posts/#{@post.id}"
+    end
+
     def destroy
         @post = Post.find(params[:id])
+        return render_forbidden if @post.user.id == @current_user.id
         if @post.destroy
             redirect_to "/users/me"
         end
