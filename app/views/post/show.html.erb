@@ -15,6 +15,9 @@
 			<span>
 				<%= link_to "編集", "/posts/#{@post.id}/edit", method: :get %>
 				<%= link_to "削除", "/posts/#{@post.id}", method: :delete, data: {confirm: "本当に削除していいですか?"} %>
+				<span class="back">
+					<%= link_to "戻る", :back %>
+				</span>
 			</span>
 		</div>
 	</div>
