@@ -15,6 +15,9 @@ div.screen.show_post {
                 .edit {
         	       padding: 10px;
         	       box-sizing: border-box;
+                       .back {
+                            float: right;
+                       }
                 }
 	}
 }

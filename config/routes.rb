@@ -18,4 +18,6 @@ Rails.application.routes.draw do
   patch '/posts/:id', to: 'post#edit_finish'
   delete '/posts/:id', to: 'post#destroy'
   post '/posts', to: 'post#create'
+
+  get '/timeline', to: 'post#timeline'
 end

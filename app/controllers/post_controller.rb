@@ -1,5 +1,10 @@
 class PostController < BaseController
+
     def new
+    end
+
+    def timeline
+        @posts = Post.all
     end
 
     def create
