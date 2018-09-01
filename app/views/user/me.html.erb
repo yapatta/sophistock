@@ -1,22 +1,7 @@
 <div class='screen users-me' style='padding-top: 50px; padding-bottom: 50px;'>
     <%= render '/layouts/header' %>
     <div class='content'>
-        <span><%= @current_user.name %></span>
-        <span class='mb-3'><%= pluralize(@current_user.posts.count, "post") %></span>
-        <div class='nav-bar'>
-            <a href="#">
-                <div class="nav-item posts">投稿</div>
-            </a>
-            <a href="#">
-                <div class="nav-item profile active">プロフィール</div>
-            </a>
-            <a href="#">
-                <div class="nav-item comment">コメント</div>
-            </a>
-            <a href="#">
-                <div class="nav-item good">いいね</div>
-            </a>
-        </div>
+        <%= render '/layouts/profile-nav2' %>
         <div class="introduction">
             <h3 class="mt-3 mb-3">
                 プロフィール

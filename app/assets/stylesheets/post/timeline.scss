@@ -12,6 +12,7 @@ div.screen.timeline-all {
 		padding-top: 10.5px;
 	}
 	.posts {
+		list-style: none;
 		margin-top: 50px;
 		margin-bottom: 50px;
 		font-size: 1.2em;
@@ -19,18 +20,19 @@ div.screen.timeline-all {
         flex-direction: column;
         padding: 10px;
 		li  {
-			padding: 10px;
+			padding-top: 8px;
+			padding-bottom: 8px;
 			a {
 				text-decoration:none;
 			}
 			.title {
 			}
 			.content {
-				padding: 5px;
+				padding: 2px;
 			}
 			.bonus {
 				font-size: 0.8em;
-				padding: 5px;
+				padding: 2px;
 			}
 		}
 	}

@@ -1,0 +1,18 @@
+<div class="profile-nav4">
+    <span><%= @current_user.name %></span>
+    <span class='mb-3'><%= pluralize(@current_user.posts.count, "post") %></span>
+    <div class='nav-bar'>
+        <a href="/users/posts">
+            <div class="nav-item posts">投稿</div>
+        </a>
+        <a href="/users/me">
+            <div class="nav-item profile active">プロフィール</div>
+        </a>
+        <a href="#">
+            <div class="nav-item comment">コメント</div>
+        </a>
+        <a href="#">
+            <div class="nav-item good">いいね</div>
+        </a>
+    </div>
+</div>

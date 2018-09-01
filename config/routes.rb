@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get '/users/me', to: 'user#me'
   get '/users/edit', to: 'user#me_edit'
   patch '/users/edit', to: 'user#edit'
+  get '/users/posts', to: 'user#my_post'
 
   get '/posts/ajax', to: 'post#ajax_load'
   get '/posts', to: 'post#index'
@@ -18,6 +19,5 @@ Rails.application.routes.draw do
   patch '/posts/:id', to: 'post#edit_finish'
   delete '/posts/:id', to: 'post#destroy'
   post '/posts', to: 'post#create'
-
   get '/timeline', to: 'post#timeline'
 end

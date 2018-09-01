@@ -1,0 +1,30 @@
+div.screen.users-post {
+	.content {
+		font-size: 1.2em;
+		display: flex;
+        flex-direction: column;
+        padding: 10px;
+        .timeline {
+        	list-style: none;
+        	display: flex;
+        	flex-direction: column;
+        	padding: 0px;
+			li  {
+				padding-top: 8px;
+				padding-bottom: 8px;
+				a {
+					text-decoration:none;
+				}
+				.title {
+				}
+				.content {
+					padding: 2px;
+				}
+				.bonus {
+					font-size: 0.8em;
+					padding: 2px;
+				}
+			}
+		}
+    }
+}

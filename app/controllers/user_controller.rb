@@ -7,4 +7,7 @@ class UserController < BaseController
         @current_user.update(introduction: params[:introduction])
         redirect_to '/users/me'
     end
+    def my_post
+        @my_posts = @current_user.posts.all
+    end
 end

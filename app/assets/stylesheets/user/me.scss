@@ -5,35 +5,6 @@ div.screen.users-me {
         flex-direction: column;
         padding: 10px;
     }
-    .nav-bar {
-        margin: 0 auto;
-        width: 100%;
-        display: flex;
-        a {
-            text-decoration: none;
-            padding: 0;
-            width: 25%;
-            div {
-                text-align: center;
-                padding: 6px 0;
-                color: black;
-                border: 1px solid #CCCCCC;
-                background-color: white;
-                font-weight: 700;
-                font-size: 13px;
-                &.active {
-                    background-color: $maincolor;
-                    color: white;
-                }
-                &.posts {
-                    border-radius: 5px 0 0 5px;
-                }
-                &.good {
-                    border-radius: 0 5px 5px 0;
-                }
-            }
-        }
-    }
     .introduction {
         h3 {
             span a .edit-btn {
