@@ -1,9 +1,20 @@
-<div class='screen timeline-all' style='padding-top: 60px; padding-bottom: 50px;'>
-	<%= render '/layouts/header' %>
+<div class='screen timeline-all'>
+	<div class="article">記事一覧</div>
 	<ul class="posts">
   		<% @posts.each do |post| %>
     		<li>
-      			<%= link_to post.title, {:controller => "post", :action => "show", :id => post.id} %>
+    			<div class="title">
+      				<h2 class="mt-0 mb-0">
+      					<%= link_to post.title, {:controller => "post", :action => "show", :id => post.id} %>
+      				</h2>
+      			</div>
+      			<div class="content">
+      				<%= truncate(post.content, :length => 50, :omission => "...さらに見る") %>
+      			</div>
+      			<div class="bonus">
+      				Posted by <%= post.user.name %>
+      				<%= post.created_at.strftime('%Y/%m/%d') %>
+      			</div>
     		</li>
   		<% end %>
 	</ul>
