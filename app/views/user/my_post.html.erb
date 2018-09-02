@@ -1,23 +1,23 @@
 <div class='screen users-post'>
   <% provide :top, "投稿" %>
 	<%= render '/layouts/header' %>
-    <div class='content'>
+    <div class='article'>
     	<%= render '/layouts/profile-nav1' %>
         <ul class="timeline">
         	<% @my_posts.each do |post| %>
     			<li>
     				<div class="title">
-      					<h2 class="mt-0 mb-0">
-      						<%= link_to post.title, {:controller => "post", :action => "show", :id => post.id} %>
-      					</h2>
-      				</div>
-      				<div class="content">
-      					<%= truncate(post.content, :length => 50, :omission => "...さらに見る") %>
-      				</div>
-      				<div class="bonus">
-      					Posted by <%= post.user.name %>
-      					<%= post.created_at.strftime('%Y/%m/%d') %>
-      				</div>
+      				<h2 class="mt-0 mb-0">
+      					<%= link_to post.title, {:controller => "post", :action => "show", :id => post.id} %>
+      				</h2>
+      			</div>
+      			<div class="content">
+      				<%= truncate(post.content, :length => 50, :omission => "...さらに見る") %>
+      			</div>
+      			<div class="bonus">
+      				Posted by <%= post.user.name %>
+              <%= post.created_at.strftime('%Y/%m/%d') %>
+      			</div>
     			</li>
   			<% end %>
         </ul>
