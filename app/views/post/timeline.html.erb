@@ -1,5 +1,6 @@
 <div class='screen timeline-all'>
-	<div class="article">記事一覧</div>
+  <% provide :top, "記事一覧" %>
+	<%= render '/layouts/header' %>
 	<ul class="posts">
   		<% @posts.each do |post| %>
     		<li>

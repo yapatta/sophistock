@@ -4,28 +4,30 @@ div.screen.users-me {
         display: flex;
         flex-direction: column;
         padding: 10px;
-    }
-    .introduction {
-        h3 {
-            span a .edit-btn {
-                float: right;
-                border-radius: 5px;
-                padding: 6px;
-                border-width: 1px;
-                height: 38px;
-                font-size: 16px;
-                cursor: pointer;
-                color: white;
-                background-color: $minorcolor;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        .introduction {
+            h3 {
+                span a .edit-btn {
+                    float: right;
+                    border-radius: 5px;
+                    padding: 6px;
+                    border-width: 1px;
+                    height: 38px;
+                    font-size: 16px;
+                    cursor: pointer;
+                    color: white;
+                    background-color: $minorcolor;
+                }
             }
-        }
-        p {
-            margin: 0 auto;
-            display: block;
-            background-color: white;
-            min-height: 150px;
-            border-radius: 5px;
-            padding: 8px;
+            p {
+                margin: 0 auto;
+                display: block;
+                background-color: white;
+                min-height: 150px;
+                border-radius: 5px;
+                padding: 8px;
+            }
         }
     }
 }
