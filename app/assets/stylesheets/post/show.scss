@@ -1,23 +1,22 @@
 div.screen.show_post {
-        .info {
-                font-size: 1.2em;
-                display: flex;
-                flex-direction: column;
-                padding: 10px;
-                .title {
-        	       padding: 10px;
-        	       box-sizing: border-box;
-                }
-                .content {
-        	       padding: 10px;
-        	       box-sizing: border-box;
-                }
-                .edit {
-        	       padding: 10px;
-        	       box-sizing: border-box;
-                       .back {
-                            float: right;
-                       }
-                }
+    .info {
+        font-size: 1.2em;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        .title {
+    	   padding: 10px;
+    	   box-sizing: border-box;
+        }
+        .content {
+    	   padding: 10px;
+    	   box-sizing: border-box;
+        }
+        .edit {
+    	   padding: 10px;
+    	   box-sizing: border-box;
+        }
 	}
 }

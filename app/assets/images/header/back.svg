@@ -1,0 +1,15 @@
+<svg id="Chevron_Selected" data-name="Chevron Selected" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 28">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <rect id="background" class="cls-1" width="16" height="28"/>
+  <path id="Chevron" class="cls-2" d="M0,10.5,10.85,0,13,2.08,4.3,10.5,13,18.92,10.85,21Z" transform="translate(1.5 3.5)"/>
+</svg>

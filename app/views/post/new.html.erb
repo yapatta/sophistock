@@ -1,4 +1,5 @@
-<div class='screen posts-new' style='padding-top: 50px; padding-bottom: 50px;'>
+<div class='screen posts-new'>
+    <% provide :top, "新規作成" %>
 	<%= render '/layouts/header' %>
 	<div class='info'>
 		<%= form_with(model: Post.new, url: '/posts', multipart: true) do |f| %>

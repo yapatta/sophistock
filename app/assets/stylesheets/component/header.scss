@@ -6,7 +6,28 @@ div.component.header {
 	font-size: 1.2em;
 	color: white; 
 	background-color: $maincolor;
-	text-align: center;
 	padding-bottom: 10.5px;
 	padding-top: 10.5px;
+	display: flex;
+	justify-content: center;
+	.back {
+		margin-left: 10px;
+		flex: 1;
+		a {
+			display: flex;
+			color: white;
+			text-decoration: none;
+			img {
+				height: 29px;
+				margin-right: 5px;
+			}
+		}
+	}
+	.top-name {
+		text-align: center;
+		flex: 4;
+	}
+	.edit {
+		flex: 1;
+	}
 }

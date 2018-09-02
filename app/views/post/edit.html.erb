@@ -1,4 +1,5 @@
-<div class='screen show-edit' style='padding-top: 50px; padding-bottom: 50px;'>
+<div class='screen show-edit'>
+	<% provide :top, "編集" %>
 	<%= render '/layouts/header' %>
 	<div class="info">
 		<%= form_with(url: "/posts/#{@post.id}", method: 'patch') do |f| %>
