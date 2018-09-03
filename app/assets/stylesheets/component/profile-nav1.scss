@@ -1,6 +1,12 @@
 div.profile-nav1 {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    padding: 10px;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
     .nav-bar {
         margin: 0 auto;
         width: 100%;

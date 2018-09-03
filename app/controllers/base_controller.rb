@@ -3,7 +3,10 @@ class BaseController < ApplicationController
 
     private
     def auth
-        @current_user = User.find(session[:id])
+        @current_user = User.find_by(id: session[:id])
+        if !@current_user
+        	render '/layouts/forbidden'
+        end
     end
 
     protected
